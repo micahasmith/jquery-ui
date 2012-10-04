@@ -5,13 +5,13 @@ var
 	// files
 	coreFiles = [
 		"jquery.ui.core.js",
-		"jquery.ui.widget.js",
+		//"jquery.ui.widget.js",
 		"jquery.ui.mouse.js",
 		"jquery.ui.draggable.js",
-		"jquery.ui.droppable.js",
-		"jquery.ui.resizable.js",
-		"jquery.ui.selectable.js",
-		"jquery.ui.sortable.js",
+		//"jquery.ui.droppable.js",
+		//"jquery.ui.resizable.js",
+		//"jquery.ui.selectable.js",
+		//"jquery.ui.sortable.js",
 		"jquery.ui.effect.js"
 	],
 
@@ -336,7 +336,7 @@ grunt.initConfig({
 	})()
 });
 
-grunt.registerTask( "default", "lint csslint htmllint qunit" );
+grunt.registerTask( "default", "lint csslint" );
 grunt.registerTask( "sizer", "concat:ui min:dist/jquery-ui.min.js compare_size:all" );
 grunt.registerTask( "sizer_all", "concat:ui min compare_size" );
 grunt.registerTask( "build", "concat min cssmin copy:dist_units_images" );
